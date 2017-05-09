@@ -1,5 +1,6 @@
 *{
-margin: 0px;
+ box-sizing: border-box;
+ margin: 0px;
 }
 
 body {
@@ -7,42 +8,43 @@ body {
 }
 
 header {
-  font-family: 'Cabin Sketch', cursive;
   background: black;
   color: white;
-  text-align: center;
+  height: 100px;
+  justify-content: space-between;
   font-size: 2em;
   padding-bottom: 15px;
   padding-top: 10px;
+  line-height: 100px;
+  padding: 0 50px;
 }
 
-ul {
-   background: #A9F5E1;
+h1 {
+  font-family: 'Cabin Sketch', cursive;
 }
 
-li {
-  font-size: 1.5em;
-  display: inline-block;
-  padding: 25px;
-  list-style: none;
-  color: black;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-li a {
-  font-family: 'VT323', monospace;
-  font-family: 'Sacramento', cursive;
-  font-size: 25px;
-  text-align: center;
-  padding-left: 125px;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 40px;
-  text-align: center;
+nav {
+    width: 50%;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
 
 a:hover {
-    background-color: #C4FFE0;
+    background-color: #F6CECE;
 }
 
 
@@ -68,10 +70,8 @@ img {
 }
 
 .botonSecciones div {
-  background-color: #A9F5E1;
+  background-color: #D8D8D8;
   text-align: center;
-  color: #A9F5E13;
-  font-family: 'Fontdiner Swanky', cursive;
   font-family: 'Poiret One', cursive;
   padding: 10px 130px;
   display: inline-block;
@@ -80,16 +80,19 @@ img {
   cursor: pointer;
 }
 
+.botonSecciones div a {
+  color: black;
+}
+
 .texto {
     display: inline-block;
     margin-left: 125px;
     width: 500px;
     text-align: justify;
-    font-family: 'Fontdiner Swanky', cursive;
     font-family: 'Poiret One', cursive;
     color: black;
     margin-top: 30px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .cerrar {
@@ -107,3 +110,15 @@ img {
    color: #878787;
    cursor: pointer;
  }
+
+
+footer {
+  font-family: 'Poiret One', cursive;
+  background-color: #585858;
+  color: white;;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+  text-align: center;
+}

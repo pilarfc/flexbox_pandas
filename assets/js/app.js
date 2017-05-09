@@ -1,4 +1,4 @@
-var botonOrigen =  document.getElementById("botonOrigen"); 
+var botonOrigen =  document.getElementById("botonOrigen");
 var botonHistoria = document.getElementById("botonHistoria");
 var botonRestaurar = document.getElementById("botonRestaurar");
 

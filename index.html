@@ -2,30 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Panda Panda</title>
+    <title>Pandas - Flex-Box</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Sacramento|VT323" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
 
 
 
   </head>
   <body>
 
-    <header>¡Panda's Life!</header>
 
-    <ul>
-      <li>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Pandas</a></li>
-        <li><a href="">Historia</a></li>
-        <li><a href="">Extinción</a></li>
-      </li>
-      </ul>
+    <header class="container">
+      <section id="logo" class="container">
+          <img src="assets/img/pandalogo.png"/>
+          <h1>  ¡Panda's Life!</h1>
+      </section>
 
 
+      <nav class="container">
+          <a href="#">Inicio</a>
+          <a href="#">Pandas</a>
+          <a href="#">Historia</a>
+          <a href="#">Extinción</a>
+      </nav>
+    </header>
+
+<section id="fotosPandas">
     <div class="pandas">
       <img src="assets/img/pandaBambu.jpg" alt="" class="fotosPandas">
       <span class="cerrar">&times;</span>
@@ -47,9 +51,9 @@
     </div>
      </section>
 
-    <section class="botonSecciones">
-      <div><a id="botonOrigen" title ="Hacer dos clicks para ocultar y uno para mostrar el texto.">Origen</a></div>
-      <div><a id="botonHistoria" title ="Hacer dos clicks para ocultar y uno para mostrar el texto.">Historia</a></div>
+    <section class="botonSecciones container">
+      <div><a id="botonOrigen" title ="Hacer un click para  mostrar el texto y dos para ocultar.">Origen</a></div>
+      <div><a id="botonHistoria" title ="Hacer un click para  mostrar el texto y dos para ocultar">Historia</a></div>
       <div><a id="botonRestaurar">Restaurar</a></div>
     </section>
 
@@ -60,6 +64,11 @@
     <section class="texto" id= "textoHistoria">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </section>
+
+
+    <footer>
+        <p>Pilar Figueroa Casas ©.</p>
+    </footer>
 
 
     <script src="assets/js/app.js"></script>
